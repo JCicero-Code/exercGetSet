@@ -1,4 +1,4 @@
-﻿class Pessoa{
+class Pessoa{
     constructor(name,anoNasc) {
         this.name = name;
         this.anoNasc = anoNasc;
@@ -22,17 +22,14 @@
     }
 }
 
-let admin = new Pessoa('Peter',2004);
+let admin = new Pessoa('Peter',2002);
 let visitante = new Pessoa('Park',2012);
 admin.novoNome = "Admin.Peter";
-visitante.novaData = "22";
+visitante.novaData = "18";
 console.log(admin.apresentar);
 console.log('Nome de login alterado para ',admin.novoNome)
 console.log('------------------')
 console.log(visitante.apresentar);
 console.log('Data alterada: ',visitante.novaData,'anos')
-visitante.novoNome = "Admin.Park"
-console.log('Olá! Nome de login alterado para ',admin.novoNome,' agora  você também é admin')
-
-https://tableless.com.br/getters-e-setters-manipuladores-com-javascript/
-https://www.w3schools.com/js/js_classes.asp
+visitante.novoNome = "Visitante.Park"
+console.log('Olá! Nome de login alterado para ',visitante.novoNome,' agora  você também pode acessar')
